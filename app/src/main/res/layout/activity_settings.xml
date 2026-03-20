@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- API Key -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ANTHROPIC API KEY" android:textColor="@color/arc_blue"
+            android:textSize="11sp" android:letterSpacing="0.2" android:layout_marginBottom="6dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etApiKey"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="sk-ant-..." android:inputType="textPassword"
+            android:textColor="@color/text_primary" android:textColorHint="@color/text_secondary"
+            android:background="@drawable/input_bg" android:padding="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- User Name -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="YOUR NAME" android:textColor="@color/arc_blue"
+            android:textSize="11sp" android:letterSpacing="0.2" android:layout_marginBottom="6dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="e.g. Tony" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/input_bg" android:padding="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Salutation -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="JARVIS CALLS YOU" android:textColor="@color/arc_blue"
+            android:textSize="11sp" android:letterSpacing="0.2" android:layout_marginBottom="6dp"/>
+        <RadioGroup android:id="@+id/rgSalutation"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="20dp">
+            <RadioButton android:id="@+id/rbSir"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Sir" android:textColor="@color/text_primary" android:checked="true"/>
+            <RadioButton android:id="@+id/rbMaam"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Ma'am" android:textColor="@color/text_primary"
+                android:layout_marginStart="24dp"/>
+        </RadioGroup>
+
+        <!-- Wake Word Toggle -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Always-on \"Hey Jarvis\""
+                android:textColor="@color/text_primary" android:textSize="14sp"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchWake"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Health Tracking Toggle -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Health tracking"
+                android:textColor="@color/text_primary" android:textSize="14sp"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchHealth"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Water Goal -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="DAILY WATER GOAL (ml)" android:textColor="@color/arc_blue"
+            android:textSize="11sp" android:letterSpacing="0.2" android:layout_marginBottom="6dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWaterGoal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="number" android:textColor="@color/text_primary"
+            android:background="@drawable/input_bg" android:padding="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Steps Goal -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="DAILY STEPS GOAL" android:textColor="@color/arc_blue"
+            android:textSize="11sp" android:letterSpacing="0.2" android:layout_marginBottom="6dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStepsGoal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="number" android:textColor="@color/text_primary"
+            android:background="@drawable/input_bg" android:padding="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Notification Access -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNotifAccess"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="GRANT NOTIFICATION ACCESS"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/arc_blue"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="SAVE SETTINGS"
+            app:backgroundTint="@color/arc_blue"
+            android:textColor="@color/bg_dark"
+            app:cornerRadius="28dp"/>
+
+    </LinearLayout>
+</ScrollView>

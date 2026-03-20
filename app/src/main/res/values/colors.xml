@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- JARVIS brand palette -->
+    <color name="arc_blue">#00D4FF</color>
+    <color name="arc_blue_dim">#1A003850</color>
+    <color name="arc_gold">#F0B429</color>
+    <color name="arc_core">#051422</color>
+    <color name="error_red">#E63C3C</color>
+    <color name="success_green">#4CAF50</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_dark">#060E18</color>
+    <color name="bg_surface">#0A1825</color>
+    <color name="bg_card">#0D2035</color>
+
+    <!-- Text -->
+    <color name="text_primary">#C8EEFF</color>
+    <color name="text_secondary">#5A8FA8</color>
+
+    <!-- Bubbles -->
+    <color name="bubble_jarvis_bg">#0D2035</color>
+    <color name="bubble_user_bg">#0A2A40</color>
+
+    <!-- System -->
+    <color name="colorPrimary">#00D4FF</color>
+    <color name="colorPrimaryVariant">#0088BB</color>
+    <color name="colorOnPrimary">#060E18</color>
+    <color name="colorSecondary">#F0B429</color>
+    <color name="colorOnSecondary">#060E18</color>
+    <color name="colorSurface">#0A1825</color>
+    <color name="colorOnSurface">#C8EEFF</color>
+    <color name="colorBackground">#060E18</color>
+    <color name="colorOnBackground">#C8EEFF</color>
+</resources>

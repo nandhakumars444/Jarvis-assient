@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JARVIS</string>
+    <string name="wake_word">Hey Jarvis</string>
+    <string name="status_online">ONLINE</string>
+    <string name="status_listening">LISTENING…</string>
+    <string name="status_thinking">PROCESSING…</string>
+    <string name="notif_wake_title">JARVIS Active</string>
+    <string name="notif_wake_text">Say "Hey Jarvis" to activate</string>
+</resources>

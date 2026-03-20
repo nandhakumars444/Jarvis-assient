@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Place orbitron_regular.ttf and share_tech_mono_regular.ttf into res/font/ -->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Orbitron (for headers/labels) - download from Google Fonts -->
+    <!-- Share Tech Mono (for chat text) - download from Google Fonts  -->
+    <!--
+    To add fonts:
+    1. Download Orbitron-Regular.ttf from fonts.google.com/specimen/Orbitron
+    2. Download ShareTechMono-Regular.ttf from fonts.google.com/specimen/Share+Tech+Mono
+    3. Place both in app/src/main/res/font/
+    4. Rename to: orbitron.ttf and share_tech_mono.ttf
+    -->
+</font-family>

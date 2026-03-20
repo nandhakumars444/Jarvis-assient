@@ -1,0 +1,4 @@
+-keep class com.jarvis.assistant.** { *; }
+-keepattributes *Annotation*
+-dontwarn okhttp3.**
+-dontwarn org.json.**
